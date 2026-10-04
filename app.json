@@ -1,0 +1,235 @@
+{
+  "expo": {
+    "name": "Anımsat",
+    "slug": "animsat",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "animsat",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.animsat.app",
+      "supportsTablet": false,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification",
+          "remote-notification"
+        ],
+        "CFBundleDisplayName": "Anımsat",
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleLocalizations": [
+          "tr",
+          "ar-SA",
+          "bn",
+          "ca",
+          "zh-Hans",
+          "zh-Hant",
+          "hr",
+          "cs",
+          "da",
+          "nl-NL",
+          "en-AU",
+          "en-CA",
+          "en-GB",
+          "en-US",
+          "fi",
+          "fr-FR",
+          "fr-CA",
+          "de-DE",
+          "el",
+          "gu",
+          "he",
+          "hi",
+          "hu",
+          "id",
+          "it",
+          "ja",
+          "kn",
+          "ko",
+          "ms",
+          "ml",
+          "mr",
+          "no",
+          "or",
+          "pl",
+          "pt-BR",
+          "pt-PT",
+          "pa",
+          "ro",
+          "ru",
+          "sk",
+          "sl",
+          "es-MX",
+          "es-ES",
+          "sv",
+          "ta",
+          "te",
+          "th",
+          "uk",
+          "ur",
+          "vi",
+          "tr",
+          "ar-SA",
+          "bn",
+          "ca",
+          "zh-Hans",
+          "zh-Hant",
+          "hr",
+          "cs",
+          "da",
+          "nl-NL",
+          "en-AU",
+          "en-CA",
+          "en-GB",
+          "en-US",
+          "fi",
+          "fr-FR",
+          "fr-CA",
+          "de-DE",
+          "el",
+          "gu",
+          "he",
+          "hi",
+          "hu",
+          "id",
+          "it",
+          "ja",
+          "kn",
+          "ko",
+          "ms",
+          "ml",
+          "mr",
+          "no",
+          "or",
+          "pl",
+          "pt-BR",
+          "pt-PT",
+          "pa",
+          "ro",
+          "ru",
+          "sk",
+          "sl",
+          "es-MX",
+          "es-ES",
+          "sv",
+          "ta",
+          "te",
+          "th",
+          "uk",
+          "ur",
+          "vi"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.animsat.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#000000",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": []
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      [
+        "expo-widgets",
+        {
+          "bundleIdentifier": "com.animsat.app.widgets",
+          "groupIdentifier": "group.com.animsat.app",
+          "widgets": [
+            {
+              "name": "CountdownWidget",
+              "displayName": "Anımsat",
+              "description": "Pinli tarihe kaç gün kaldığını gör",
+              "ios": {
+                "contentMarginsDisabled": true,
+                "supportedFamilies": [
+                  "systemSmall",
+                  "systemMedium",
+                  "systemLarge"
+                ]
+              }
+            },
+            {
+              "name": "CountdownLockWidget",
+              "displayName": "Anımsat",
+              "description": "Kilit ekranında pinli tarihi gör",
+              "ios": {
+                "contentMarginsDisabled": true,
+                "supportedFamilies": [
+                  "accessoryRectangular"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      [
+        "expo-router",
+        {
+          "headers": {
+            "Cross-Origin-Embedder-Policy": "credentialless",
+            "Cross-Origin-Opener-Policy": "same-origin"
+          }
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#000000",
+          "dark": {
+            "image": "./assets/images/splash.png",
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-sqlite",
+      "@react-native-community/datetimepicker",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/android-icon-monochrome.png",
+          "color": "#C45C4A"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Etkinlik arka planı için galerinize erişim gerekir."
+        }
+      ],
+      "expo-localization"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "headers": {
+          "Cross-Origin-Embedder-Policy": "credentialless",
+          "Cross-Origin-Opener-Policy": "same-origin"
+        }
+      },
+      "eas": {
+        "projectId": "f91056c6-eeab-49bb-8fd0-c98812246bf6"
+      }
+    },
+    "owner": "serhatkochan",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f91056c6-eeab-49bb-8fd0-c98812246bf6"
+    }
+  }
+}
